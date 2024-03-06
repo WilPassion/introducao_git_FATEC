@@ -1,11 +1,11 @@
 import calculadora
-
+import time 
 def menu():
     while True:
         print("\nEscolha uma opção:")
         print("[1] Soma")
         print("[0] Sair\n")
-        
+
         opcao = input("Digite a operação desejada: ")
 
         if opcao == '1':
@@ -14,7 +14,6 @@ def menu():
             print(num1,"+",num2, "= ", calculadora.somar(num1, num2))
         
         elif opcao == '0':
-            print("Saindo...")
+            print("Encerrando...")
             break
-
 menu()
