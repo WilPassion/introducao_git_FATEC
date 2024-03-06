@@ -4,6 +4,7 @@ def menu():
     while True:
         print("\nEscolha uma opção:")
         print("[1] Soma")
+        print("[2] Subtrair")
         print("[0] Sair\n")
 
         opcao = input("Digite a operação desejada: ")
@@ -12,6 +13,11 @@ def menu():
             num1 = float(input("Digite o primeiro número: "))
             num2 = float(input("Digite o segundo número: "))
             print(num1,"+",num2, "= ", calculadora.somar(num1, num2))
+
+        if opcao == '2':
+            num1 = float(input("Digite o primeiro número: "))
+            num2 = float(input("Digite o segundo número: "))
+            print(num1,"x",num2, "= ", calculadora.subtrair(num1, num2))    
         
         elif opcao == '0':
             print("Encerrando...")
